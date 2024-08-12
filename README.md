@@ -1,18 +1,18 @@
-# **** DESCRIPTION *************
+### **** DESCRIPTION *************
 
 This is a luigi implementation of the GATK RNAseq genotyping pipeline for the UChicago 
 Midway2 Cluster
 
-# ***** DESCRIPTION(END) *************
+### ***** DESCRIPTION(END) *************
 
-# ***** INSTALLATION *************
+### ***** INSTALLATION *************
 
 module load python
 pip install luigi   OR   conda install -c anaconda luigi
 
-# ***** INSTALLATION(END) *************
+### ***** INSTALLATION(END) *************
 
-# ***** Current optimal run scheme:   *************
+### ***** Current optimal run scheme:   *************
     1st run (First Three Steps)
         python /project2/lbarreiro/programs/rnaseq-variant-pipeline/run_parallel.py 
         \ <experiment-id> 
@@ -31,10 +31,10 @@ pip install luigi   OR   conda install -c anaconda luigi
         python /project2/lbarreiro/programs/rnaseq-variant-pipeline/run_parallel.py 
         \ <experiment-id>
         \ --partition broadwl --memory 32G --task_until ProduceHeatmapQUICK
-# ***** Current optimal run scheme (END):   *************
+### ***** Current optimal run scheme (END):   *************
 
 
-# ***** FULL INSTRUCTIONS *************
+### ***** FULL INSTRUCTIONS *************
 
 Parallelizes the GATK rnaseq variant calling pipeline by sample.
 
@@ -80,9 +80,9 @@ waiting until the previous step has completed.
 6.) The final VCF for joint calling is: 
     [output_dir]/joint_calling/[self.experiment_id]/joint.removed.final.vcf.gz
 
-# ***** FULL INSTRUCTIONS (END)*************
+### ***** FULL INSTRUCTIONS (END)*************
 
-# NOTES
+### NOTES
 
 NOTE: If you are just interested in sample identification, downsampling reads can help improve speed
 
