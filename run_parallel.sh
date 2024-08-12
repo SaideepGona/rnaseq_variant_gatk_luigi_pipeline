@@ -1,0 +1,1 @@
+python run_parallel.py /project2/lbarreiro/users/Saideep/rnaseq_variant_testing/luigi.cfg example broadwl 

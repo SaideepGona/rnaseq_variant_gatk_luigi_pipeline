@@ -1,0 +1,5 @@
+#!/bin/sh
+module load STAR
+module load python
+export PYTHONPATH=/project2/lbarreiro/programs/rnaseq-variant-pipeline/ 
+python -m luigi --module rnaseq_variant_pipeline.tasks $@
